@@ -1,0 +1,7 @@
+version: "3.8"
+services:
+  worker:
+    build:
+      dockerfile: ./Dockerfile
+    ports:
+      - "8050:8050"
