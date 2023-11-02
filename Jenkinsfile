@@ -44,8 +44,8 @@ pipeline {
             steps{
                 sh '''
                     docker image prune -f
-                    docker stop dockerproject-api-1
-                    docker stop dockerproject-worker-1
+                    #docker stop dockerproject-api-1
+                    #docker stop dockerproject-worker-1
                     docker-compose up -d
                     echo 'docker compose deploy Completed' 
                 '''
